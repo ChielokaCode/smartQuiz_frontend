@@ -1,0 +1,98 @@
+.grid-container-dashboard-header{
+    display: flex;
+width: 1440px;
+height: 72px;
+padding: 14px 130px 14px 50px;
+justify-content: space-between;
+align-items: center;
+display: grid;
+grid-template-columns: auto auto auto auto;
+column-gap: 10px;
+}
+.smart-quiz-dashboard-text{
+    color: var(--Secondary, #2F2E41);
+font-family: Lato;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.32px;
+}
+.search-container{
+    display: flex;
+padding: 8px 12px;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 8px;
+background: var(--Gray20, #F5F5F5);
+width: 400px;
+height: 40px;
+}
+.search-img, .explore-img, .library-img{
+    width: 20px;
+height: 20px;
+}
+form button{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+form input{
+padding: 8px 12px;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 8px;
+background: var(--Gray20, #F5F5F5);
+width: 330px;
+height: 40px;
+border: none;
+}
+
+.grid-item-dashboard-header{
+    width: 231px;
+    height: 24px;
+    display: flex;
+align-items: center;
+gap: 8px;
+    
+}
+.explore{
+    color: var(--Primary, #6C63FF);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 10px;
+}
+.library{
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.explore a{
+    text-decoration: none;
+}
+
+.library a{
+    text-decoration: none;
+    color: black;
+}
+.account-img{
+    width: 100px;
+    height: 44px;
+    padding-top: 30px;
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+background-color: transparent;
+}

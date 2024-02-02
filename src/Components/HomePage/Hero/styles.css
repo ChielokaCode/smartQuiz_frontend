@@ -1,0 +1,97 @@
+/* body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+     max-width: 100%;
+    overflow-x: hidden; 
+  } */
+
+
+  .container-hero {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+
+.first-div{
+    margin-top: 20px;
+    width: 400px;
+    margin-right: 3px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 50px;
+}
+.main-title{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+.title-bold{
+    margin-top: 2px;
+    margin-bottom: 30px;
+    width: 400px;
+    color: var(--black-70, #3D3D3D);
+font-family: Epilogue;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px;
+}
+p{
+    margin-top: -10px;
+    width: 485px;
+    height: 24px;
+    margin-top: 34px 0px 34px 0px;
+}
+button{
+    border: none;
+    width: 265px;
+    height: 58px;
+    margin-top: -20px;
+    display: flex;
+padding: 12px 50px;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: rgba(108, 99, 255, 0.20);
+}
+button > span{
+    color: var(--Primary, #6C63FF);
+font-family: Lato;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.img-tab{
+ max-width: 700px;
+ margin-right: -20px;
+}
+
+.blueImg{
+    width: 600px;
+height: 450px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items in the column */
+      }
+    .blueImg{
+        margin-top: 20px;
+        text-align: center;
+        width: 500px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,76 @@
+.container-smartquiz{
+    height: 520px;
+    margin-bottom: -80px;
+    margin-top: 30px;
+   
+    
+}
+.main-body{
+    margin: 10px auto;
+}
+
+.well{
+    margin: auto;
+    width: 1344px;
+    height: 332px;
+padding: 32.5px 80px 17.5px 80px;
+border-radius: 35.386px;
+background: #FFF;
+box-shadow: 0px 5.662px 14.154px 0px rgba(0, 0, 0, 0.13);
+position: relative;
+}
+
+.whyChoose{
+    text-align: center;
+    color: var(--black-70, #3D3D3D);
+font-family: Lato;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 60px;
+}
+span{
+    color: var(--Primary, #6C63FF);
+font-family: Lato;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 60px;
+}
+.innerWell{
+    display: flex;
+align-items: flex-start;
+width: 1112px;
+height: 282px;
+}
+
+.firstInner, .secondInner, .thirdInner{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 5px;
+margin: 0 25px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+h3{
+    width: 327px;
+    color: var(--black-70, #3D3D3D);
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+}
+p{
+    width: 329px;
+    color: var(--black-60, #525252);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
