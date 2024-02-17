@@ -1,0 +1,148 @@
+/*html {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+/*body {*/
+/*    !*background-color: #faf9f6;*!*/
+/*    padding: 40px;*/
+/*}*/
+.headercontainer-takequiz {
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    background-color: #f0f0f0;
+}
+.item {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 0 10px;
+}
+.item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.item:nth-child(2) {
+    align-self: center;
+}
+.item:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.button backbutton{
+    background-color: transparent;
+}
+.container-takequiz{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #5D3FD3;
+}
+.inner-takequiz{
+    background-color: white;
+    box-shadow:10px 10px 5px lightblue;
+    padding: 40px;
+    text-align: center;
+}
+.progress-takeQuiz{
+    width: 80%;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.progress-bar {
+    margin: 30px;
+    height: 10px;
+    border: 1px solid #F0EAD6;
+    background-color: white;
+    border-radius: 8px;
+}
+.filler-takequiz {
+    background: #5D3FD3;
+    height: 100%;
+    width: 0%;
+    border-radius: 8px;
+}
+.flex-container-takequiz {
+    width: 10rem;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.grid-container-takequiz{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content:center;
+}
+.grid-item-takequiz{
+    padding: 5px;
+}
+.image-class-takequiz{
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+}
+.button-class {
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.previous-button{
+    border-radius: 5px;
+    color: white;
+    background-color: #5D3FD3;
+    height: 40px;
+    width: 200px;
+}
+.next-button{
+    border-radius: 5px;
+    color: white;
+    background-color: #5D3FD3;
+    height: 40px;
+    width: 200px;
+}
+.button-class button{
+    margin-right: 20px;
+}
+
+.dropbox{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.dropbox-option{
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+.drag-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px
+}
+.columnA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3-text-takeQuiz{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}

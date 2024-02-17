@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./DashboardBody.css";
 import { getAllSubjects } from "../../../utils/apiFunctions";
+import { Link } from "react-router-dom";
 
 const DashboardBody = () => {
   const [subjects, setSubjects] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     fetchSubjects();
@@ -22,16 +24,19 @@ const DashboardBody = () => {
       setIsLoading(false);
     }
   };
+
+
   console.log(subjects);
   return (
     <div className="container-dashboard-body">
-      <button className="create-new-quiz-button">
+      <Link to="/create-quiz">
+        <button className="create-new-quiz-button">
         <img
           className="create-new-quiz-img"
-          src="src/assets/icons/WhiteStars.svg"
+          src="../src/assets/icons/WhiteStars.svg"
         />
         Create Quiz
-      </button>
+      </button></Link>
       <div className="banner-img-dashboard-body">
         <div className="banner-text">
           <h2 className="banner-header-title">
@@ -40,28 +45,28 @@ const DashboardBody = () => {
           </h2>
           <p className="banner-header-paragraph">
             <a href="#">View Performance Journey</a>
-            <img src="src/assets/icons/arrow-right.svg" />
+            <img src="../src/assets/icons/arrow-right.svg" />
           </p>
         </div>
         <img
           className="banner-purple-img1"
-          src="src/assets/icons/banner-img1.svg"
+          src="../src/assets/icons/banner-img1.svg"
         />
         <img
           className="banner-purple-img2"
-          src="src/assets/icons/banner-img2.svg"
+          src="../src/assets/icons/banner-img2.svg"
         />
       </div>
       <h3 className="explore-subjects">Explore Subjects</h3>
       {isLoading ? (
-        <img className="loading-icon" src="src/assets/icons/loading.png" />
+        <img className="loading-icon" src="../src/assets/icons/loading.png" />
       ) : (
         <>
           {/* one subject */}
           <div className="grid-container-dashboard-body">
             {subjects.map((subject) => (
-              <div key={subject.id} className="grid-item-dashboard-body">
-                <div className="subjects-div">
+              <Link to={`/list-of-quiz/${subject.name}`} key={subject.id} className="grid-item-dashboard-body custom-link-style">                
+              <div className="subjects-div">
                   <div
                     style={{ background: subject.backgroundColor }}
                     className="fetched-subject-img"
@@ -74,7 +79,7 @@ const DashboardBody = () => {
                   <h4>{subject.name}</h4>
                   <p>{subject.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </>

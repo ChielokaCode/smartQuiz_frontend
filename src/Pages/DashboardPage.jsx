@@ -1,14 +1,14 @@
-import React from "react";
-import DashboardHeader from "../Components/DashboardPage/DashboardHeader/DashboardHeader";
-import DashboardBody from "../Components/DashboardPage/DashboardBody/DashboardBody";
+import React from 'react'
+import DashboardBody from '../Components/DashBoardPage/DashboardBody/DashboardBody'
+import DashboardHeader from '../Components/DashBoardPage/DashboardHeader/DashboardHeader'
 
-const DashboardPage = () => {
+const DashBoardPage = () => {
   return (
     <div>
       <DashboardHeader />
       <DashboardBody />
     </div>
-  );
-};
+  )
+}
 
-export default DashboardPage;
+export default DashBoardPage

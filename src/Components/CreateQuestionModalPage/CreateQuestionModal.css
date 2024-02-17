@@ -1,0 +1,53 @@
+
+.createQuestion-grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+column-gap: 5px;
+align-items: center;
+margin: 5% 10% 10% 10%;
+
+}
+.questionTypes:hover{
+ background-color: rgb(108,97,246);
+ color: white;
+ border-radius: 7px;
+
+}
+.createquestionTypesparagragh{
+font-size: larger;
+margin-left: 30px;
+margin-top: 10px;
+opacity:0.7;
+}
+.questionTypes{
+align-items: baseline;
+width: 350px;
+height: 120px;
+border-radius: 4px;
+border: 2px whitesmoke solid;
+padding: 10px;
+font-size: 25px;
+font-weight: bold;
+background-color: white;
+transition: background-color 0.3s ease;
+
+}
+.questionTypesimg{
+height: 100px;
+width: auto;
+}
+.createquestionTypes{
+    padding: 20px;
+    position: absolute;
+}
+.createQuestion{
+
+}
+
+
+.questionTypesmultiplechoice{
+
+}
+.questionTypesdraganddrop{
+
+}

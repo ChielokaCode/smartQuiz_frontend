@@ -1,0 +1,122 @@
+
+
+.wholepage-invite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    max-width: 470px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.inner-invite {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 470px
+}
+
+.top-invite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+.top-invite p {
+    text-align: center;
+    font-size: 35px;
+}
+
+.cancel-invite {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: end;
+}
+
+.input-invite {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    /*margin-top: -60px;*/
+    background-color: white;
+}
+
+.input-invite input {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 0.78;
+    width: 70%;
+
+}
+
+.input-invite button {
+    padding: 2px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-right: -20px;
+    width: 30%;
+    height:40px;
+}
+
+.social-invite {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia-invite {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-body.success {
+    color: green;
+}
+
+.modal-body.error {
+    color: red;
+}
+
+.inputspacelink-invite {
+    display: flex;
+    align-items: center;
+    /*margin-top: 20px;*/
+}
+
+.referral {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.socialmedia-invite {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 0.1rem;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+
+}
+
+.socialmedia-invite img {
+    width: 30px;
+    height: 30px
+}

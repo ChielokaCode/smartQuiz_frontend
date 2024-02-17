@@ -1,12 +1,12 @@
-import React from "react";
-import ForgotP from "../Components/ForgotPasswordPage/ForgotP";
+import React from 'react'
+import ForgotP from "../Components/ForgotPasswordPage/ForgotP.jsx";
 
 const ForgotPPage = () => {
   return (
     <div>
-      <ForgotP />
+      <ForgotP/>
     </div>
-  );
-};
+  )
+}
 
-export default ForgotPPage;
+export default ForgotPPage

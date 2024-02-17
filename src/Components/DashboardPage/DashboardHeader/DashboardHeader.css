@@ -1,4 +1,4 @@
-.grid-container-dashboard-header{
+.grid-container-dashboard-header-dashboardHeader{
     display: flex;
 width: 1440px;
 height: 72px;
@@ -9,27 +9,27 @@ display: grid;
 grid-template-columns: auto auto auto auto;
 column-gap: 10px;
 }
-.smart-quiz-dashboard-text{
-    color: var(--Secondary, #2F2E41);
-font-family: Lato;
+.smart-quiz-dashboard-text-dashboardHeader{
+    color: #2F2E41;
+    font-family: Lato, serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: 24px;
 letter-spacing: -0.32px;
 }
-.search-container{
+.search-container-dashboardHeader{
     display: flex;
 padding: 8px 12px;
 align-items: center;
 gap: 8px;
 flex: 1 0 0;
 border-radius: 8px;
-background: var(--Gray20, #F5F5F5);
+background:#F5F5F5;
 width: 400px;
 height: 40px;
 }
-.search-img, .explore-img, .library-img{
+.search-img-dashboardHeader, .explore-img-dashboardHeader, .library-img-dashboardHeader{
     width: 20px;
 height: 20px;
 }
@@ -45,13 +45,13 @@ align-items: center;
 gap: 8px;
 flex: 1 0 0;
 border-radius: 8px;
-background: var(--Gray20, #F5F5F5);
+background: #F5F5F5;
 width: 330px;
 height: 40px;
 border: none;
 }
 
-.grid-item-dashboard-header{
+.grid-item-dashboard-header-dashboardHeader{
     width: 231px;
     height: 24px;
     display: flex;
@@ -59,37 +59,38 @@ align-items: center;
 gap: 8px;
     
 }
-.explore{
-    color: var(--Primary, #6C63FF);
-    font-family: Lato;
+.explore-dashboardHeader{
+    color: #6C63FF;
+    font-family: Lato, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-right: 10px;
 }
-.library{
+.library-dashboardHeader{
     color: #000;
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.explore a{
+.explore-dashboardHeader a{
     text-decoration: none;
 }
 
-.library a{
+.library-dashboardHeader a{
     text-decoration: none;
     color: black;
 }
-.account-img{
+.account-img-dashboardHeader{
+    border: none;
     width: 100px;
     height: 44px;
     padding-top: 30px;
     color: #000;
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

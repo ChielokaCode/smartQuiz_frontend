@@ -1,0 +1,52 @@
+.dragHeader{
+    /* width: 1,440px; */
+    height: 68px;
+    /* padding: 14px, 130px, 14px, 130px; */
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    }
+    .dragHheaderMultichoice{
+    margin-left: 20px;
+    }
+    
+    .dragHeaderMarkPics{
+        width: 30px;
+        height: 30px;
+        
+    
+    }
+    
+    .dragQuestionButton{
+        position: absolute;
+        display: flex;
+    margin-left: 70% ;
+  
+    
+    }
+    
+    .dragHeaderCancel{
+        border: 0px;
+        height: 50px;
+        width: 120px;
+        font-size: 17px;
+    border-radius: 5px;
+    background-color: white;
+    }
+    .dragHeaderSave{
+        background-color: blue;
+        color: white;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        border: 0px;
+        font-size: 15px;
+text-orientation: sideways-right;    
+align-items: stretch;    
+    
+    }
+    

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -9,15 +9,15 @@ const Hero = () => {
           <h2 className="title-bold">
             Your Gateway to Excellence in Education!
           </h2>
-          <p>Sign Up Now for a transformative Learning Experience</p>
+          <p className="paragraph-hero">Sign Up Now for a transformative Learning Experience</p>
         </div>
-        <button>
-          <img src="src/assets/icons/Stars.svg" />
+        <button className="button-hero">
+          <img src="../src/assets/icons/Stars.svg" />
           <span>Start Learning</span>
         </button>
       </div>
       <div className="img-tab">
-        <img className="blueImg" src="src/assets/icons/headline-img.svg" />
+        <img className="blueImg" src="../src/assets/icons/headline-img.svg" />
       </div>
     </div>
   );

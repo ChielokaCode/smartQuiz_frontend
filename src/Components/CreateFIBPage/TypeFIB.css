@@ -1,0 +1,86 @@
+/* .dragGridContainer{
+    display: grid;
+    align-items: center;
+    grid-template-columns:100px, 100px, 100px,100px;
+    grid-template-rows: 100px, 100px, 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.dragForm{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 892px; 
+  height: 553px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc; 
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+} */
+.FIBForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.FIBGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-size: 20px;
+  margin: 50% 50%;
+}
+
+.FIBQuestion {
+  grid-column: span 4;
+  height: 100px;
+  border-radius: 6px;
+  background-color: rgb(108, 97, 246);
+  border: 0px;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  width: 1000px;
+  padding: 20px;
+}
+
+.FIBAnswer {
+  height: 150px;
+  border-radius: 6px;
+  background-color: black;
+  border: 0px;
+  font-size: 20px;
+  grid-column: span 4;
+  color: white;
+  width: 1000px;
+  padding: 20px;
+}
+
+.FIBexplanation {
+  grid-column: span 4;
+  height: 70px;
+  border-radius: 4px;
+  border: 0px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  width: 1000px;
+  padding: 20px;
+}
+
+.FIBquestionpoint {
+  height: 70px;
+  border-radius: 4px;
+  border: 0px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}

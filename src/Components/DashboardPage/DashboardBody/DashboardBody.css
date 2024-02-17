@@ -9,7 +9,7 @@ padding: 8px 24px;
 align-items: center;
 gap: 8px;
 border-radius: 8px;
-background: var(--Primary, #6C63FF);
+background:#6C63FF;
 width: 170px;
 height: 40px;
 color: white;
@@ -29,7 +29,7 @@ color: white;
     grid-template-columns: auto auto auto;
     column-gap: 20px;
     border-radius: 8px;
-background: var(--Primary, #6C63FF);
+background: #6C63FF;
 margin-top: 30px;
 padding: 10px 20px;
 margin-bottom: 15px;
@@ -50,7 +50,7 @@ align-self: stretch;
     margin-top: 20px;
     width: 250px;
     height: 19px;
-    color: var(--White, #FFF);
+    color: #FFF;
 font-family: Lato;
 font-size: 16px;
 font-style: normal;
@@ -135,7 +135,7 @@ align-self: stretch;
 }
 .subjects-div p{
     height: 60px;
-color: var(--Gray-3, #828282);
+color: #828282;
 font-family: Lato;
 font-size: 13px;
 font-style: normal;
@@ -167,5 +167,7 @@ height: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+}
+.custom-link-style{
+  text-decoration: none; 
 }

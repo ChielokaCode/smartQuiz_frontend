@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./SmartQuiz.css";
 
 const SmartQuiz = () => {
   return (
@@ -12,7 +12,7 @@ const SmartQuiz = () => {
       <div className="well">
         <div className="innerWell">
           <div className="firstInner">
-            <img src="src/assets/icons/Solutions.svg" />
+            <img src="../src/assets/icons/Solutions.svg" />
             <h3>Innovative Learning Solutions</h3>
 
             <p>
@@ -22,7 +22,7 @@ const SmartQuiz = () => {
             </p>
           </div>
           <div className="secondInner">
-            <img src="src/assets/icons/Elearning.svg" />
+            <img src="../src/assets/icons/Elearning.svg" />
             <h3>Dedicated Educator Support</h3>
             <p>
               Our platform offers unwavering assistance to educators, ensuring
@@ -31,7 +31,7 @@ const SmartQuiz = () => {
             </p>
           </div>
           <div className="thirdInner">
-            <img src="src/assets/icons/User.svg" />
+            <img src="../src/assets/icons/User.svg" />
             <h3>User-Friendly Platform</h3>
             <p>
               Navigate seamlessly through our intuitive and user-friendly

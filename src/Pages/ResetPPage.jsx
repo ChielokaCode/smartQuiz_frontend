@@ -1,12 +1,12 @@
-import React from "react";
-import ResetP from "../Components/ResetPasswordPage/ResetP";
+import React from 'react'
+import ResetP from "../Components/ResetPasswordPage/ResetP.jsx";
 
 const ResetPPage = () => {
   return (
     <div>
-      <ResetP />
+      <ResetP/>
     </div>
-  );
-};
+  )
+}
 
-export default ResetPPage;
+export default ResetPPage

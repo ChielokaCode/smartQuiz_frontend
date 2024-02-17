@@ -1,0 +1,39 @@
+.publish-button{
+    display: flex;
+    padding: 15px;
+    margin-top: 20px;
+    
+
+}
+.publishButton-title{
+    margin-top: -16px;
+
+
+
+}
+.arrowIcon{
+    width: 30px;
+    height: auto;
+
+}
+.publishbutton{
+    margin-left: 150%;
+    color: blue;
+    border-radius: 15px;
+    display: flex;
+    column-gap: 10px;
+    height: 50px;
+    margin-top: -20px;
+    width:250px;
+    align-items: center;
+
+
+}
+.publishIcon{
+    margin-right: -5px;
+
+}
+.publishbuttondiv{
+    margin-left: 40%;
+
+}

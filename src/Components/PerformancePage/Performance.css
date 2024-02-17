@@ -1,0 +1,99 @@
+
+.main-container-performance{
+    height: 100vh; /* Use viewport height to fill the entire screen */
+    background-color: #6C63FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-performance {
+    width: 75rem;
+}
+
+.button-back {
+    background-color: #140da2;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #00000040;
+}
+
+.back-img,
+.review-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+}
+
+.square-box-grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto;
+    width: 40rem;
+    height: 25.5rem;
+    row-gap: 3rem;
+    text-align: center;
+}
+
+.score {
+    color: white;
+}
+
+.performance-img {
+    width: 12.5rem;
+    height: 10.625rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18rem;
+    height: 3rem;
+    padding: 1rem 4rem; /* Fix padding syntax error */
+    border-radius: 1rem;
+    gap: 1rem;
+    background: #FFFFFF;
+    font-family: Lato, serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: left;
+    box-shadow: 0 0.25rem 0.25rem 0 #00000040;
+}
+
+.score-message {
+    color: white;
+}
+
+/* Media query for screens below 500px */
+@media (max-width: 500px) {
+    .main-container-performance {
+        display: block;
+    }
+
+    .container-performance {
+        width: auto;
+        padding: 1rem;
+    }
+
+    .square-box-grid-container {
+        width: auto;
+        padding: 1rem;
+    }
+
+    .performance-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .review-button {
+        width: 100%;
+    }
+}
+

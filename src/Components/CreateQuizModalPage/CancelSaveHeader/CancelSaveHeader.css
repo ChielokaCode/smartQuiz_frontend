@@ -1,0 +1,53 @@
+.QuizHeader{
+    /* width: 1,440px; */
+    height: 68px;
+    /* padding: 14px, 130px, 14px, 130px; */
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 30px;
+    }
+    .QuizHheaderMultichoice{
+    margin-left: 20px;
+    }
+    
+    .QuizHeaderMarkPics{
+        width: 30px;
+        height: 30px;
+        
+    
+    }
+    
+    .QuizQuestionButton{
+        position: absolute;
+        display: flex;
+    margin-left: 80% ;
+  
+    
+    }
+    
+    .QuizHeaderCancel{
+        border: 0px;
+        height: 50px;
+        width: 120px;
+        font-size: 17px;
+    border-radius: 5px;
+    background-color: white;
+    }
+    .QuizHeaderSave{
+        background-color: blue;
+        color: white;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        border: 0px;
+        font-size: 15px;
+text-orientation: sideways-right;    
+align-items: center;    
+padding: 10px;
+    
+    }
+    

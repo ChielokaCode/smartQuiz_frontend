@@ -1,0 +1,110 @@
+.createquizform{
+    
+}
+.createquizgridcontainer{
+    display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  border: solid;
+  padding: 30px;
+  margin-left: 50% 50%;
+  position: absolute;
+width: 100%;
+}
+
+.quiz-input{
+width: 500px;
+height: 72px;
+gap: 8px;
+padding: 10px;
+}
+.textaspectgridcontainer{
+    width: 400px;
+    height: 336px;
+    row-gap: 2px;
+    position:relative;
+
+}
+.quiz-input input,
+.quiz-input select,
+.quiz-input textarea
+{
+border: whitesmoke;
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+.quiz-input label
+{
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.quiz-input input::placeholder,
+.quiz-input input::placeholder
+{
+    color: #000;
+    opacity: 0.5;
+    align-content: start;
+}
+/* .createnewquizdiv{
+    width: Hug (930px);
+    height: Hug (386.04px);
+    gap: 32px;
+    border: solid;
+
+} */
+.createQuizimage-grid{
+    display: grid;
+width: 500px;
+height: 400px;
+column-gap: 2px;
+row-gap: 2px;
+grid-template-columns: repeat(3, 1fr); 
+
+
+
+} 
+/* .createnewquizdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .createquizgridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 80%; 
+  
+  .createquizform {
+    width: 100%;
+  }
+  
+  .textaspectgridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+  }
+  
+  .quiz-input {
+    margin-bottom: 20px;
+  }
+*/ 
+  
+   .image-preview {
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  .selected {
+    border: 2px solid #007bff;
+  } 
+   
