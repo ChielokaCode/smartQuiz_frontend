@@ -28,13 +28,11 @@ function App() {
   return (
     <>
       <Router>
-        
         <Routes>
           <Route exact path="/" element={<HomePage />} />
            <Route exact path="/signup" element={<SignUpPage/>}/>
             <Route exact path="/about-us" element={<AboutUsPage/>}/>
             <Route exact path="/review-answers" element={<ReviewAnswerPage/>}/>
-
             <Route exact path="/dashboard" element={<DashBoardPage/>}/>
             <Route exact path="/performance/:scores" element={<PerformancePage/>}/>
             <Route exact path="/list-of-quiz/:subjectName" element={<ListOfQuizPage/>}/>
@@ -45,7 +43,6 @@ function App() {
             <Route exact path="/invite-students/:quizId" element={<InviteStudentsPage />} />
             <Route exact path="/start-quiz/:quizId" element={<StartQuizPage/>} />
             <Route exact path="/take-quiz/:quizId" element={<TakeQuizPage/>}/>
-
             <Route exact path="/MULTIPLE_CHOICE" element={<CreateMCQPage/>}/>
             <Route exact path="/FILL_IN_BLANK" element={<CreateFIBPage/>}/>
             <Route exact path="/DRAG_AND_DROP" element={<CreateDragAndDropPage/>}/>
@@ -53,9 +50,7 @@ function App() {
             <Route exact path="/create-quiz" element={<CreateQuizModalPage/>}/>
             <Route exact path="/quiz-preview" element={<QuizPreviewPages/>}/>
             <Route exact path="/quiz-result" element={<QuizResult />} />
-
         </Routes>
-
       </Router>
     </>
   );

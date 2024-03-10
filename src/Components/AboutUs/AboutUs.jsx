@@ -36,7 +36,7 @@ const AboutUs = () => {
             <img className="engineer-image" src={chielokaImg}/>
           </div>
           <img className='decagon-avatar-about-us'
-               src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
+               src='https://decagon.institute/static/qmedia/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Chieloka E. Madubugwu</h5>
             <img src={javaImg}/> <p>Software Engineer</p>
