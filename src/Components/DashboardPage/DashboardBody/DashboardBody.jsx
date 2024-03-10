@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./DashboardBody.css";
 import { getAllSubjects } from "../../../utils/apiFunctions";
 import { Link } from "react-router-dom";
+import  whiteStarsImg from "/src/assets/icons/WhiteStars.svg";
+import arrowRightImg from "/src/assets/icons/arrow-right.svg";
+import bannerImg1 from "/src/assets/icons/banner-img1.svg";
+import bannerImg2 from "/src/assets/icons/banner-img2.svg";
+import loadingImg from "/src/assets/icons/loading.png";
 
 const DashboardBody = () => {
   const [subjects, setSubjects] = useState([]);
@@ -33,7 +38,7 @@ const DashboardBody = () => {
         <button className="create-new-quiz-button">
         <img
           className="create-new-quiz-img"
-          src="../src/assets/icons/WhiteStars.svg"
+          src={whiteStarsImg}
         />
         Create Quiz
       </button></Link>
@@ -45,21 +50,21 @@ const DashboardBody = () => {
           </h2>
           <p className="banner-header-paragraph">
             <a href="#">View Performance Journey</a>
-            <img src="../src/assets/icons/arrow-right.svg" />
+            <img src={arrowRightImg} />
           </p>
         </div>
         <img
           className="banner-purple-img1"
-          src="../src/assets/icons/banner-img1.svg"
+          src={bannerImg1}
         />
         <img
           className="banner-purple-img2"
-          src="../src/assets/icons/banner-img2.svg"
+          src={bannerImg2}
         />
       </div>
       <h3 className="explore-subjects">Explore Subjects</h3>
       {isLoading ? (
-        <img className="loading-icon" src="../src/assets/icons/loading.png" />
+        <img className="loading-icon" src={loadingImg}/>
       ) : (
         <>
           {/* one subject */}

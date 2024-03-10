@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./QuizPreviewHeader.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// import { Popover } from "react-bootstrap";
+import publishImg from "/src/assets/icons/Publish.svg";
+
+
 
 const QuizPreviewHeader = () => {
   const [quizData, setQuizData] = useState(null);
@@ -174,7 +176,7 @@ console.log(publishData);
             Save
           </a>
           <button className="publish-quiz" onClick={handlePublish}>
-            <img className="publish-img" src="src/assets/icons/Publish.svg" />
+            <img className="publish-img" src={publishImg}  alt="publishImg"/>
             Publish Quiz
           </button>
         </div>

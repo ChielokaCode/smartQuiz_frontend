@@ -3,6 +3,13 @@ import './InviteStudents.css';
 import {Link, useNavigate, useParams} from "react-router-dom";
 import axios from "axios";
 import {Button, Modal} from "react-bootstrap";
+import cancelImg from "/src/assets/icons/cancel.svg";
+import facebookImg from "/src/assets/icons/Facebook.svg";
+import instagramImg from "/src/assets/icons/Instagram.svg";
+import telegramImg from "/src/assets/icons/Telegram.svg";
+import twitterImg from "/src/assets/icons/Twitter.svg";
+import mailImg from "/src/assets/icons/mail.svg";
+import referralImg from "/src/assets/icons/referral.svg";
 
 const InviteStudents = () => {
     const navigate = useNavigate();
@@ -83,7 +90,7 @@ const InviteStudents = () => {
                     <p>Invite Your Students</p>
                     <Link to="/dashboard" >
                         <button type="submit" className="cancel-invite">
-                            <img src="../src/assets/icons/cancel.svg" width="30px" height="30px"/>
+                            <img src={cancelImg} width="30px" height="30px" alt="cancelImg"/>
                         </button>
                     </Link>
                 </div>
@@ -106,19 +113,19 @@ const InviteStudents = () => {
                 <h3>Share on social media</h3>
                 <div className="social-invite">
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/Facebook.svg" alt="Facebook" width="30px" height="30px"/>
+                        <img src={facebookImg} alt="Facebook" width="30px" height="30px"/>
                     </button>
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/Instagram.svg" alt="Facebook" width="30px" height="30px"/>
+                        <img src={instagramImg} alt="Facebook" width="30px" height="30px"/>
                     </button>
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/Telegram.svg" alt="Telegram" width="30px" height="30px"/>
+                        <img src={telegramImg} alt="Telegram" width="30px" height="30px"/>
                     </button>
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/Twitter.svg" alt="Twitter" width="30px" height="30px"/>
+                        <img src={twitterImg} alt="Twitter" width="30px" height="30px"/>
                     </button>
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/mail.svg" alt="Email" width="30px" height="30px"/>
+                        <img src={mailImg} alt="Email" width="30px" height="30px"/>
                     </button>
                 </div>
                 <br/><br/>
@@ -145,7 +152,7 @@ const InviteStudents = () => {
                 <div className="inputspacelink-invite">
                     <input type="text" placeholder="https://www.example.com/invite/123456" className="referral"/>
                     <button className="socialmedia-invite" type="submit">
-                        <img src="../src/assets/icons/referral.svg" alt="reflink" width="30px" height="30px"/>
+                        <img src={referralImg} alt="reflink" width="30px" height="30px"/>
                     </button>
                 </div>
             </div>

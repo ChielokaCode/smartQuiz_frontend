@@ -1,7 +1,18 @@
 import React from 'react'
 import './AboutUs.css'
 import { Link } from 'react-router-dom';
-
+import arrowLeft from "/src/assets/icons/arrow-left.svg";
+import chielokaImg from "/src/assets/icons/Chieloka.png";
+import javaImg from "/src/assets/icons/java.svg";
+import chimeneImg from "/src/assets/icons/chimene.png";
+import engineerImg from "/src/assets/icons/engineer.svg";
+import desmondImg from "/src/assets/icons/desmond.png";
+import jamesImg from "/src/assets/icons/james.png";
+import topeImg from "/src/assets/icons/tope.png";
+import tosinImg from "/src/assets/icons/tosin.png";
+import taiwoImg from "/src/assets/icons/taiwo.png";
+import boluImg from "/src/assets/icons/bolu.png";
+import emmanuelImg from "/src/assets/icons/emmanuel.png";
 
 const AboutUs = () => {
   return (
@@ -10,7 +21,7 @@ const AboutUs = () => {
     <button  className="create-back-button-about-us">
         <img
           className="arrow-left-about-us"
-          src="../src/assets/icons/arrow-left.svg"
+          src={arrowLeft}
         />
         Back
       </button>
@@ -22,132 +33,132 @@ const AboutUs = () => {
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/Chieloka.png"/>
+            <img className="engineer-image" src={chielokaImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
-            <h5 className="engineer-name-about-us">Chieloka E. Madubugwqu</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <h5 className="engineer-name-about-us">Chieloka E. Madubugwu</h5>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/chimene.png"/>
+            <img className="engineer-image" src={chimeneImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Chimene Ozuru</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/emmanuel.png"/>
+            <img className="engineer-image" src={emmanuelImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Emmanuel S. Bobade</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/bolu.png"/>
+            <img className="engineer-image" src={boluImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Boluwatife Adesanya</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/taiwo.png"/>
+            <img className="engineer-image" src={taiwoImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Taiwo Majolagbe</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/tosin.png"/>
+            <img className="engineer-image" src={tosinImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Tosin Ajibade</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/tope.png"/>
+            <img className="engineer-image" src={topeImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Temitope Okuselu</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/james.png"/>
+            <img className="engineer-image" src={jamesImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">James Adedini.</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/desmond.png"/>
+            <img className="engineer-image" src={desmondImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Desmond Isama</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/engineer.svg"/>
+            <img className="engineer-image" src={engineerImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Ikenna Amadi</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 
         <div className="grid-item-about-us">
           <div className="engineer-and-decagon-image">
-            <img className="engineer-image" src="../src/assets/icons/engineer.svg"/>
+            <img className="engineer-image" src={engineerImg}/>
           </div>
           <img className='decagon-avatar-about-us'
                src='https://decagon.institute/static/media/decagon.18e1e74149bf346e03ceb8c52e3b3177.svg'/>
           <div className="about-us-h5">
             <h5 className="engineer-name-about-us">Williams Preye</h5>
-            <img src="../src/assets/icons/java.svg"/> <p>Software Engineer</p>
+            <img src={javaImg}/> <p>Software Engineer</p>
           </div>
         </div>
 

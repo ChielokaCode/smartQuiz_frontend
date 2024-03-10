@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import starsSvgImg from "/src/assets/icons/Stars.svg";
+import headLineImg from "/src/assets/icons/headline-img.svg";
 
 const Hero = () => {
   return (
@@ -12,12 +14,12 @@ const Hero = () => {
           <p className="paragraph-hero">Sign Up Now for a transformative Learning Experience</p>
         </div>
         <button className="button-hero">
-          <img src="../src/assets/icons/Stars.svg" />
+          <img src={starsSvgImg}  alt="starsImg"/>
           <span>Start Learning</span>
         </button>
       </div>
       <div className="img-tab">
-        <img className="blueImg" src="../src/assets/icons/headline-img.svg" />
+        <img className="blueImg" src={headLineImg}  alt="headLineImg"/>
       </div>
     </div>
   );

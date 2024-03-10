@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./ResetP.css";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
 import { Button, Modal } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import passwordUpdateImg from "/src/assets/icons/PasswordUpdateSuccessful.svg";
+import resetPasswordImg from "/src/assets/icons/ResetPassword.png";
 
 const ResetP = () => {
     const navigate = useNavigate();
@@ -70,12 +72,26 @@ const ResetP = () => {
         setModalMessage("");
     };
 
+    const styles = {
+        backgroundImage: `url(${resetPasswordImg})`,
+        display: 'flex',
+        width: '840px',
+        height: '1024px',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'fixed',
+        right: '10px',
+        bottom: '5px',
+        maxWidth: '55%',
+    };
+
     return (
         <div className="grid-container-signup">
             <div className="grid-item-signup">
                 <div className="form-table">
                     <div className="top-form">
-                        <h3 className="SQ-text">Smart Quiz</h3>
+                        <Link className="link-text" to="/"><h3 className="SQ-text">Smart Quiz</h3></Link>
                         <h3 className="createAcct-text">Reset your Password</h3>
                     </div>
                     <div className="form-proper">
@@ -113,34 +129,38 @@ const ResetP = () => {
                             </button>
                         </form>
 
-                        <Modal show={showModal} onHide={handleClose}>
-                            <Modal.Header closeButton>
-                                <Modal.Title>
-                                    {status ? successMessage : errorMessage}
-                                </Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body className="modal-body">
-                                <img
-                                    className="email-sent-img"
-                                    src="../src/assets/icons/PasswordUpdateSuccessful.svg"
-                                />
-                                {modalMessage}
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Button
-                                    className="modal-close"
-                                    variant="secondary"
-                                    onClick={handleClose}
-                                >
-                                    Continue
-                                </Button>
-                            </Modal.Footer>
-                        </Modal>
+                        <div className={`modal-forgot ${showModal ? 'show' : ''}`}>
+                            <div className="modal-container-forgot">
+                                <div className="modal-title-forgot">
+                                        <Modal.Title>
+                                            {status ? successMessage : errorMessage}
+                                        </Modal.Title>
+                                </div>
+                                <div>
+                                    <div className="icon-forgot">
+                                        <img src={passwordUpdateImg} alt="passwordUpdateImg"/>
+                                    </div>
+                                    <div className="text-body-forgot">
+                                        <Modal.Body>
+                                            {modalMessage}
+                                        </Modal.Body>
+                                    </div>
+                                    <Modal.Footer>
+                                        <Button
+                                            className="modal-button-forgot"
+                                            onClick={handleClose}>
+                                            Continue
+                                        </Button>
+                                    </Modal.Footer>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div id="img5-resetP" />
+            <div style={styles}/>
         </div>
     );
 };

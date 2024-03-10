@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './ListOfQuiz.css'
-import { Link, useParams } from 'react-router-dom'
-import axios from 'axios'
+import './ListOfQuiz.css';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+import arrowLeft from "/src/assets/icons/arrow-left.svg";
+import geniusesImg from "/src/assets/icons/geniuses.svg";
+import acctAvatarImg from "/src/assets/icons/account-avatar.svg";
 
 const ListOfQuiz = () => {
   const[quiz, setQuiz] = useState([])
@@ -15,7 +18,6 @@ const ListOfQuiz = () => {
       setQuiz(result.data);
     } catch (error) {
       console.error("Error fetching Quiz:", error.message);
-      // Handle the error gracefully, e.g., set an empty array for 'quiz' or show an error message to the user
     }
   };
   
@@ -32,8 +34,8 @@ const ListOfQuiz = () => {
     <button  className="create-back-button">
         <img
           className="create-new-quiz-img"
-          src="../src/assets/icons/arrow-left.svg"
-        />
+          src={arrowLeft}
+         alt="arrowLeftImg"/>
         Back
       </button>
       </Link>
@@ -46,8 +48,8 @@ const ListOfQuiz = () => {
         </div>
         <img
           className="banner-purple-img1"
-          src="../src/assets/icons/geniuses.svg"
-        />
+          src={geniusesImg}
+         alt="geniusesImg"/>
         
       </div>
     </div>
@@ -64,7 +66,7 @@ const ListOfQuiz = () => {
         <p className='num-of-questions'>{quizzes.questionCount} Qs</p>
         <div className="quiz-h5">
         <h5 className="quiz-name-listOfQuiz">{quizzes.topic}</h5>
-        <img src="../src/assets/icons/account-avatar.svg"/> <p>{quizzes.userFirstName} {quizzes.userLastName}</p>
+        <img src={acctAvatarImg} alt="acctAvatarImg"/> <p>{quizzes.userFirstName} {quizzes.userLastName}</p>
         </div>
           </Link>
       ))}

@@ -4,6 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Button, Modal } from "react-bootstrap";
 import { GoogleLogin } from "@react-oauth/google";
+import signUpImg from "/src/assets/icons/SignUp.png";
+import emailSentImg from "/src/assets/icons/EmailSentSuccessfully.svg";
+
 
 const SignUp = () => {
     const [token, setToken] = useState("");
@@ -24,6 +27,7 @@ const SignUp = () => {
 
     const { firstName, lastName, email, phoneNumber, password, confirmPassword } =
         user;
+
 
     const onInputChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value });
@@ -71,12 +75,27 @@ const SignUp = () => {
         setModalMessage("");
     };
 
+    const styles = {
+        backgroundImage: `url(${signUpImg})`,
+    display: 'flex',
+    width: '840px',
+    height: '1024px',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'fixed',
+    right:'10px',
+    bottom: '5px',
+    maxWidth: '55%'
+
+    }
+
     return (
         <div className="grid-container-signup">
             <div className="grid-item-signup">
                 <div className="form-table">
                     <div className="top-form">
-                        <h3 className="SQ-text">Smart Quiz</h3>
+                        <Link className="link-text" to="/"><h3 className="SQ-text">Smart Quiz</h3></Link>
                         <h3 className="createAcct-text">Create a new Account</h3>
                         {/* <button className="google-button"> */}
                         <GoogleLogin
@@ -89,9 +108,8 @@ const SignUp = () => {
                                 console.log("Login Failed");
                             }}
                         />
-                        {/* <img id="img6" src="src/assets/icons/Google.png" />
-              <span className="googe-text">Sign up with Google</span>
-            </button> */}
+
+
                     </div>
 
                     <div className="form-proper">
@@ -185,29 +203,32 @@ const SignUp = () => {
                             </button>
                         </form>
 
-                        <Modal show={showModal} onHide={handleClose}>
-                            <Modal.Header closeButton>
-                                <Modal.Title>
-                                    {status ? successMessage : errorMessage}
-                                </Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body className="modal-body">
-                                <img
-                                    className="email-sent-img"
-                                    src="../src/assets/icons/EmailSentSuccessfully.svg"
-                                />
-                                {modalMessage}
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Button
-                                    className="modal-close"
-                                    variant="secondary"
-                                    onClick={handleClose}
-                                >
-                                    Continue
-                                </Button>
-                            </Modal.Footer>
-                        </Modal>
+                        <div className={`modal-forgot ${showModal ? 'show' : ''}`}>
+                            <div className="modal-container-forgot">
+                                <div className="modal-title-forgot">
+                                        <Modal.Title>
+                                            {status ? successMessage : errorMessage}
+                                        </Modal.Title>
+                                </div>
+                                <div>
+                                    <div className="icon-forgot">
+                                        <img src={emailSentImg} alt="emailSentImg"/>
+                                    </div>
+                                    <div className="text-body-forgot">
+                                        <Modal.Body>
+                                            {modalMessage}
+                                        </Modal.Body>
+                                    </div>
+                                    <Modal.Footer>
+                                        <Button
+                                            className="modal-button-forgot"
+                                            onClick={handleClose}>
+                                            Continue
+                                        </Button>
+                                    </Modal.Footer>
+                                </div>
+                            </div>
+                        </div>
 
                         <p className="alreadyHaveAnAcct">
                             Already have an account?
@@ -219,7 +240,7 @@ const SignUp = () => {
                 </div>
             </div>
 
-            <div id="img5" />
+            <div style={styles}/>
         </div>
     );
 };

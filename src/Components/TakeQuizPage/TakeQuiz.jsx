@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './TakeQuiz.css';
 import axios from "axios";
 import {useParams, useNavigate} from "react-router-dom";
+import timerImg from "/src/assets/icons/timer.svg";
 
 const TakeQuiz = () => {
     const navigate = useNavigate();
@@ -210,13 +211,10 @@ const TakeQuiz = () => {
                      {/*<form onSubmit={(e) => handleSubmit(e)}>*/}
                     <div className="item">{currentQuestionIndex + 1} of {quiz.questions.length}</div>
                     <div className="item">
-                        <img src="../src/assets/icons/timer.svg" alt="Timer" />
+                        <img src={timerImg} alt="Timer" />
                         <h5>Time Left: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h5>
                     </div>
                     <div className="container-takequiz">
-                        {/*<div className="progress-bar-takequiz">*/}
-                        {/*    <div className="filler-takequiz" style={{ width: "25%" }}></div>*/}
-                        {/*</div>*/}
                         {renderProgressBar()}
                     </div>
                     <div className="inner-takequiz">
@@ -303,7 +301,7 @@ const TakeQuiz = () => {
                         </div>
                         <h5>{currentQuestion.explanation}</h5>
                     </div>
-                    {/*</form>*/}
+
                 </div>
 
             ) : (

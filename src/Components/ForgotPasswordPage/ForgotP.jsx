@@ -3,6 +3,8 @@ import "./ForgotP.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Button, Modal } from "react-bootstrap";
+import emailSentImg from "/src/assets/icons/EmailSentSuccessfully.svg";
+import forgotPasswordImg from "/src/assets/icons/ForgotPassword.png";
 
 const ForgotP = () => {
     const [showModal, setShowModal] = useState(false);
@@ -65,12 +67,26 @@ const ForgotP = () => {
         setModalMessage("");
     };
 
+    const styles = {
+        backgroundImage: `url(${forgotPasswordImg})`,
+        display: 'flex',
+        width: '840px',
+        height: '1024px',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'fixed',
+        right:'10px',
+        bottom: '5px',
+        maxWidth: '55%'
+    }
+
     return (
         <div className="grid-container-signup">
             <div className="grid-item-signup">
                 <div className="form-table">
                     <div className="top-form">
-                        <h3 className="SQ-text">Smart Quiz</h3>
+                        <Link className="link-text" to="/"><h3 className="SQ-text">Smart Quiz</h3></Link>
                         <h3 className="createAcct-text">Reset Password</h3>
                         <p className="resetPassword-text">
                             Enter your email below and we’ll send you instructions on how to
@@ -98,30 +114,32 @@ const ForgotP = () => {
                             </button>
                         </form>
 
-                        <Modal show={showModal} onHide={handleClose}>
-                            <Modal.Header closeButton>
-                                <Modal.Title>
-                                    {status ? successMessage : errorMessage}
-                                </Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body className="modal-body">
-                                <img
-                                    className="email-sent-img"
-                                    src="../src/assets/icons/EmailSentSuccessfully.svg"
-                                />
-                                <br />
-                                {modalMessage}
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Button
-                                    className="modal-close"
-                                    variant="secondary"
-                                    onClick={handleClose}
-                                >
-                                    Continue
-                                </Button>
-                            </Modal.Footer>
-                        </Modal>
+                        <div className={`modal-forgot ${showModal ? 'show' : ''}`}>
+                            <div className="modal-container-forgot">
+                                <div className="modal-title-forgot">
+                                        <Modal.Title>
+                                            {status ? successMessage : errorMessage}
+                                        </Modal.Title>
+                                </div>
+                                <div>
+                                    <div className="icon-forgot">
+                                        <img src={emailSentImg} alt="emailSentImg"/>
+                                    </div>
+                                    <div className="text-body-forgot">
+                                        <Modal.Body>
+                                            {modalMessage}
+                                        </Modal.Body>
+                                    </div>
+                                    <Modal.Footer>
+                                        <Button
+                                            className="modal-button-forgot"
+                                            onClick={handleClose}>
+                                            Continue
+                                        </Button>
+                                    </Modal.Footer>
+                                </div>
+                            </div>
+                        </div>
 
                         <p className="alreadyHaveAnAcct">
                             Already have an account?{" "}
@@ -133,7 +151,7 @@ const ForgotP = () => {
                 </div>
             </div>
 
-            <div id="img5-forgotP" />
+            <div style={styles}/>
         </div>
     );
 };

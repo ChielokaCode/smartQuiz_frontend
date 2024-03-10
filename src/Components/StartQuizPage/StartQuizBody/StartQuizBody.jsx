@@ -2,6 +2,11 @@ import React, {useEffect, useState} from "react";
 import "./StartQuizBody.css";
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
+import arrowLeftImg from "/src/assets/icons/arrow-left.svg";
+import acctAvatarImg from "/src/assets/icons/account-avatar.svg";
+import questionMarkImg from "/src/assets/icons/question mark.svg";
+import timeImg from "/src/assets/icons/Time.svg";
+import playImg from "/src/assets/icons/Play.svg";
 
 const StartQuizBody = () => {
   const [quizs, setQuizs] = useState([]);
@@ -31,7 +36,7 @@ const StartQuizBody = () => {
         {error && <p>{error}</p>}
             <div key={quizs.id} className="container-dashboard-body">
               <button className="back-black-icon">
-                <img src="../src/assets/icons/arrow-left.svg"/>
+                <img src={arrowLeftImg} alt="arrowLeftImg"/>
                 Back
               </button>
 
@@ -49,18 +54,18 @@ const StartQuizBody = () => {
 
               <div className="grid-container-dashboard-header-startquiz">
                 <div className="account-avatar-name-and-email">
-                  <img src="../src/assets/icons/account-avatar.svg"/>
+                  <img src={acctAvatarImg} alt="acctAvatarImg"/>
                   <div className="time-startquiz">
                     <p> {quizs.userFirstName}</p>
                     <h6>{quizs.userLastName}</h6>
                   </div>
                 </div>
                 <div className="time-startquiz">
-                  <img src="../src/assets/icons/question mark.svg"/>
+                  <img src={questionMarkImg} alt="questionMarkImg"/>
                   <p> {quizs.questionCount} Questions</p>
                 </div>
                 <div className="time-startquiz">
-                  <img src="../src/assets/icons/Time.svg"/>
+                  <img src={timeImg} alt="timeImg"/>
                   <p> {quizs.timeLimit} Minutes</p>
                 </div>
               </div>
@@ -75,7 +80,7 @@ const StartQuizBody = () => {
         <div className="button-btn">
 
           <Link to={`/take-quiz/${quizId}`}><button className="start-quiz-btn-startQuizBody">
-            <img src="../src/assets/icons/Play.svg"/>
+            <img src={playImg} alt="playImg"/>
             <span>Start Quiz</span>
           </button></Link>
 

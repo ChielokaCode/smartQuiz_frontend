@@ -1,5 +1,8 @@
 import React from "react";
 import "./SmartQuiz.css";
+import solutionImg from "/src/assets/icons/Solutions.svg";
+import eLearningImg from "/src/assets/icons/Elearning.svg";
+import userImg from "/src/assets/icons/User.svg";
 
 const SmartQuiz = () => {
   return (
@@ -12,7 +15,7 @@ const SmartQuiz = () => {
       <div className="well">
         <div className="innerWell">
           <div className="firstInner">
-            <img src="../src/assets/icons/Solutions.svg" />
+            <img src={solutionImg} />
             <h3>Innovative Learning Solutions</h3>
 
             <p>
@@ -22,7 +25,7 @@ const SmartQuiz = () => {
             </p>
           </div>
           <div className="secondInner">
-            <img src="../src/assets/icons/Elearning.svg" />
+            <img src={eLearningImg} />
             <h3>Dedicated Educator Support</h3>
             <p>
               Our platform offers unwavering assistance to educators, ensuring
@@ -31,7 +34,7 @@ const SmartQuiz = () => {
             </p>
           </div>
           <div className="thirdInner">
-            <img src="../src/assets/icons/User.svg" />
+            <img src={userImg} />
             <h3>User-Friendly Platform</h3>
             <p>
               Navigate seamlessly through our intuitive and user-friendly

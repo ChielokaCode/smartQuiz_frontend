@@ -1,6 +1,9 @@
 import React from "react";
 import "./Performance.css";
 import {useParams} from "react-router-dom";
+import arrowLeftWhiteImg1 from "/src/assets/icons/arrow-left (1).svg";
+import rewardsImg from "/src/assets/icons/rewards.svg";
+import reviewImg from "/src/assets/icons/Review.svg";
 
 const Performance = () => {
   const {scores} = useParams();
@@ -24,15 +27,15 @@ const Performance = () => {
           <button className="button-back">
             <img
                 className="back-img"
-                src="../src/assets/icons/arrow-left (1).svg"
-            />
+                src={arrowLeftWhiteImg1}
+             alt="arrowLeftImg"/>
           </button>
 
           <div className="square-box-grid-container">
             <img
                 className="performance-img"
-                src="../src/assets/icons/rewards.svg"
-            />
+                src={rewardsImg}
+             alt="rewardsImg"/>
             <h4 className="score">{scores}%</h4>
             <h4 className="score">
               {message}
@@ -40,8 +43,8 @@ const Performance = () => {
             <button className="review-button">
               <img
                   className="review-img"
-                  src="../src/assets/icons/Review.svg"
-              />
+                  src={reviewImg}
+               alt="reviewImg"/>
               Review Answers
             </button>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PasswordRToken.css";
 import { Link, useNavigate } from "react-router-dom";
+import forgotPasswordImg from "/src/assets/icons/ForgotPassord.svg";
 
 const PasswordRToken = () => {
     const [token, setToken] = useState("");
@@ -18,12 +19,26 @@ const PasswordRToken = () => {
         }
     };
 
+    const styles  = {
+            backgroundImage: `url(${forgotPasswordImg})`,
+            display: 'flex',
+            width: '840px',
+            height: '1024px',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'fixed',
+            right: '10px',
+            bottom: '5px',
+            maxWidth: '55%'
+        };
+
     return (
         <div className="grid-container-signup">
             <div className="grid-item-signup">
                 <div className="form-table">
                     <div className="top-form">
-                        <h3 className="SQ-text">Smart Quiz</h3>
+                        <Link className="link-text" to="/"><h3 className="SQ-text">Smart Quiz</h3></Link>
                         <h3 className="createAcct-text">Reset Password</h3>
                         <p className="resetPassword-text">
                             Enter your six digit code sent to your email, Code will expire in
@@ -49,26 +64,6 @@ const PasswordRToken = () => {
                             Submit
                         </button>
 
-                        {/* <Modal show={showModal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>
-                  {status ? successMessage : errorMessage}
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body className="modal-body">
-                {modalMessage}
-              </Modal.Body>
-              <Modal.Footer>
-                <Button
-                  className="modal-close"
-                  variant="secondary"
-                  onClick={handleClose}
-                >
-                  Continue
-                </Button>
-              </Modal.Footer>
-            </Modal> */}
-
                         <p className="alreadyHaveAnAcct">
                             Already have an account?
                             <Link to="/signin/signin">
@@ -79,7 +74,7 @@ const PasswordRToken = () => {
                 </div>
             </div>
 
-            <div id="img5-forgotP" />
+            <div style={styles} />
         </div>
     );
 };

@@ -73,7 +73,7 @@ const CreateNewQuiz = ({quizData, setQuizData}) => {
               <div className='textaspectgridcontainer'>
                   <div className='quiz-input'>
                     <label htmlFor="quiz-name">Quiz Name</label><br/>
-                   <input type='text' id="quizName"placeholder='Untitled Quiz' name='quizName' value={quizData.quizName} onChange={handleInputChange} required></input>
+                   <input type='text' id="quizName" placeholder='Untitled Quiz' name='quizName' value={quizData.quizName} onChange={handleInputChange} required></input>
                   </div>
                   <div className='quiz-input'>
                     <label htmlFor="quiz-subject">Subject</label><br/>

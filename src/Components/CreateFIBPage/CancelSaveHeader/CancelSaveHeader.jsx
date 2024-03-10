@@ -1,10 +1,11 @@
 import "./CancelSaveHeader.css";
+import rectangleImg from "/src/assets/icons/rectangle.png";
 const CancelSaveHeader = ({ onSave, onCancel }) => {
   return (
     <div className="dragHeader">
       <div className="dragHheaderMultichoice">
         <img
-          src="src/Components/CreateFIBPage/CancelSaveHeader/rectangle.png"
+          src={rectangleImg}
           alt="multichoice"
           className="dragHeaderMarkPics"
         />{" "}

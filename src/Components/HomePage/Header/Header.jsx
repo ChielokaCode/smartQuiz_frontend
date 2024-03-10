@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="main-container-header">
-      <span className="smart-quiz-header">Smart Quiz</span>
+      <Link className="link-text" to="/"><span className="smart-quiz-header">Smart Quiz</span></Link>
       <button className="nav-header">
         <div className="frame-1-header">
-          <a href="#home" className="home-header">
+          <Link to="/home" className="home-header">
             Home
-          </a>
+          </Link>
           <Link to="/about-us" className="about-us-header">
             About us
           </Link>
-          <a href="#services" className="services-header">
+          <Link to="/services" className="services-header">
             Services
-          </a>
-          <a href="#contact" className="contact-us-header">
+          </Link>
+          <Link to="/contact-us" className="contact-us-header">
             Contact Us
-          </a>
+          </Link>
         </div>
       </button>
       <div className="stars-header-header" />

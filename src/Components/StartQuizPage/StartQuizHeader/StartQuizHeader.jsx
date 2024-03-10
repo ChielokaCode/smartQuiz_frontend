@@ -2,6 +2,8 @@ import React from "react";
 import "./StartQuizHeader.css";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
+import searchImg from "/src/assets/icons/Search.svg";
+import filterImg from "/src/assets/icons/Filter.svg";
 
 const StartQuizHeader = () => {
     const navigate = useNavigate();
@@ -25,8 +27,8 @@ const StartQuizHeader = () => {
                 <form action="#">
                     <img
                         className="search-img-startQuizHeader"
-                        src="../src/assets/icons/Search.svg"
-                    />
+                        src={searchImg}
+                     alt="searchImg"/>
                     <input
                         className="input-search-startQuizHeader"
                         type="search"
@@ -35,8 +37,8 @@ const StartQuizHeader = () => {
                     />
                     <img
                         className="search-img-startQuizHeader"
-                        src="../src/assets/icons/Filter.svg"
-                    />
+                        src={filterImg}
+                     alt="filterImg"/>
                 </form>
             </div>
             <form onSubmit={(e) => onLogOut(e)}>

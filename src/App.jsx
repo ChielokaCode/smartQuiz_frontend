@@ -23,9 +23,12 @@ import ReviewAnswerPage from "./Pages/ReviewAnswerPage.jsx";
 import QuizResult from "./Pages/QuizP/QuizResult.jsx";
 
 function App() {
+
+
   return (
     <>
       <Router>
+        
         <Routes>
           <Route exact path="/" element={<HomePage />} />
            <Route exact path="/signup" element={<SignUpPage/>}/>
@@ -52,6 +55,7 @@ function App() {
             <Route exact path="/quiz-result" element={<QuizResult />} />
 
         </Routes>
+
       </Router>
     </>
   );

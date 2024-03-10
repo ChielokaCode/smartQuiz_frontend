@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./QuizPreviewBody.css";
 import { useNavigate } from "react-router-dom";
+import checkBoxImg from "/src/assets/icons/check_box.svg";
+import deleteImg from "/src/assets/icons/delete.svg";
+import penImg from "/src/assets/icons/pen.svg";
+import ecclipseImg1 from "/src/assets/icons/Ellipse 587 (1).svg";
+import ecclipseImg from "/src/assets/icons/Ellipse 587.svg";
+import plusImg from "/src/assets/icons/plus.svg";
 
 const QuizPreviewBody = () => {
   const [questionDataList, setQuestionData] = useState(null);
@@ -41,13 +47,13 @@ const QuizPreviewBody = () => {
         questionDataList.map((question, index) => (
           <div className="grid-item-question-preview-body" key={index}>
             <div className="question-edit-delete-tab">
-              <img src="src/assets/icons/check_box.svg" alt="checkbox" />
+              <img src={checkBoxImg} alt="checkbox" />
               <h3>Question {index + 1}</h3>
               <a href="#" onClick={() => handleDeleteQuestion(index)}>
-                <img src="src/assets/icons/delete.svg" alt="delete" />
+                <img src={deleteImg} alt="delete" />
               </a>
               <a href="#">
-                <img src="src/assets/icons/pen.svg" alt="edit" />
+                <img src={penImg} alt="edit" />
               </a>
             </div>
             <h3 className="question-content">{question.questionContent}</h3>
@@ -56,7 +62,7 @@ const QuizPreviewBody = () => {
                 if (key.startsWith("option")) {
                   return (
                     <div className="grid-items-answer-table" key={optionIndex}>
-                      <img src="src/assets/icons/Ellipse 587 (1).svg" alt="" />
+                      <img src={ecclipseImg1} alt="" />
                       <h4>{value}</h4>
                     </div>
                   );
@@ -65,7 +71,7 @@ const QuizPreviewBody = () => {
                 return null;
               })}
               <div className="grid-items-answer">
-                <img src="src/assets/icons/Ellipse 587.svg" alt="answer" />
+                <img src={ecclipseImg} alt="answer" />
                 <h4>{question.answer}</h4>
               </div>
             </div>
@@ -76,7 +82,7 @@ const QuizPreviewBody = () => {
       )}
       <div className="button-btn">
         <button className="create-new-question-button" onClick={handleNewQuiz}>
-          <img src="src/assets/icons/plus.svg" alt="plus" />
+          <img src={plusImg} alt="plus" />
           <span>Create new Question</span>
         </button>
       </div>
